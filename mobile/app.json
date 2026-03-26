@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Raiwex",
+    "slug": "raiwex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": ["ios", "android"],
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.raiwex.app"
+    },
+    "android": {
+      "package": "com.raiwex.app"
+    }
+  }
+}
