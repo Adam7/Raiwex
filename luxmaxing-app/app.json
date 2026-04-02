@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Luxmaxing",
+    "slug": "luxmaxing-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.luxmaxing"
+    },
+    "android": {
+      "package": "com.example.luxmaxing"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "firebaseApiKey": "${FIREBASE_API_KEY}",
+      "firebaseAuthDomain": "${FIREBASE_AUTH_DOMAIN}",
+      "firebaseProjectId": "${FIREBASE_PROJECT_ID}",
+      "firebaseStorageBucket": "${FIREBASE_STORAGE_BUCKET}",
+      "firebaseMessagingSenderId": "${FIREBASE_MESSAGING_SENDER_ID}",
+      "firebaseAppId": "${FIREBASE_APP_ID}",
+      "revenueCatAppleKey": "${REVENUECAT_APPLE_PUBLIC_KEY}",
+      "revenueCatGoogleKey": "${REVENUECAT_GOOGLE_PUBLIC_KEY}"
+    }
+  }
+}
