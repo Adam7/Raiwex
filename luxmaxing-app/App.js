@@ -11,6 +11,8 @@ import AppNavigator from './src/navigation/AppNavigator';
 import AuthNavigator from './src/navigation/AuthNavigator';
 import { registerAndScheduleDaily } from './src/services/notificationService';
 
+// Merged startup flow: themed navigation + explicit auth/onboarding routing.
+
 const appTheme = {
   ...DarkTheme,
   colors: {
@@ -33,7 +35,7 @@ function LoadingScreen() {
   );
 }
 
-function RootSwitch() {
+function RootNavigation() {
   const { user, loading, hasOnboarded } = useAuth();
 
   useEffect(() => {
@@ -56,7 +58,7 @@ export default function App() {
           <SubscriptionProvider>
             <NavigationContainer theme={appTheme}>
               <StatusBar style="light" />
-              <RootSwitch />
+              <RootNavigation />
             </NavigationContainer>
           </SubscriptionProvider>
         </AuthProvider>
